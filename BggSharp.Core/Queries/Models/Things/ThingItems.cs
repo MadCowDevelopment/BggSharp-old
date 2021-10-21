@@ -6,7 +6,7 @@ namespace BggSharp.Core.Queries.Models.Things
 	[XmlRoot(ElementName="items")]
 	public class ThingItems {
 		[XmlElement(ElementName="item")]
-		public List<Item> Item { get; set; }
+		public List<Item> Items { get; set; }
 		[XmlAttribute(AttributeName="termsofuse")]
 		public string TermsOfUse { get; set; }
 	}

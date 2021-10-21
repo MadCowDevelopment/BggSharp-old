@@ -6,7 +6,7 @@ namespace BggSharp.Core.Queries.Models.Things
     [XmlRoot(ElementName="results")]
     public class Results {
         [XmlElement(ElementName="result")]
-        public List<Result> Result { get; set; }
+        public List<Result> ResultItems { get; set; }
         [XmlAttribute(AttributeName="numplayers")]
         public string NumPlayers { get; set; }
     }

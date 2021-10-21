@@ -10,7 +10,7 @@ namespace BggSharp.Core.Queries.Models.Things
         [XmlElement(ElementName="image")]
         public string Image { get; set; }
         [XmlElement(ElementName="name")]
-        public List<Name> Name { get; set; }
+        public List<Name> Names { get; set; }
         [XmlElement(ElementName="description")]
         public string Description { get; set; }
         [XmlElement(ElementName="yearpublished")]
@@ -20,7 +20,7 @@ namespace BggSharp.Core.Queries.Models.Things
         [XmlElement(ElementName="maxplayers")]
         public MaxPlayers MaxPlayers { get; set; }
         [XmlElement(ElementName="poll")]
-        public List<Poll> Poll { get; set; }
+        public List<Poll> Polls { get; set; }
         [XmlElement(ElementName="playingtime")]
         public Playtime Playtime { get; set; }
         [XmlElement(ElementName="minplaytime")]
@@ -30,7 +30,7 @@ namespace BggSharp.Core.Queries.Models.Things
         [XmlElement(ElementName="minage")]
         public MinAge MinAge { get; set; }
         [XmlElement(ElementName="link")]
-        public List<Link> Link { get; set; }
+        public List<Link> Links { get; set; }
         [XmlAttribute(AttributeName="type")]
         public string Type { get; set; }
         [XmlAttribute(AttributeName="id")]

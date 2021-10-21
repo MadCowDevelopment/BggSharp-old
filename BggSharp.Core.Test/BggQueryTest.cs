@@ -19,6 +19,9 @@ namespace BggSharp.Core.Test
             var result =
                 await BggQuery.Execute<ThingItems, ThingItemQueryCriteria>(
                     new ThingItemQueryCriteria(new[] { "1" }));
+
+            Assert.AreEqual(1, result.Items.Count);
+            Assert.AreEqual("Die Macher", result.Items[0].Names[0].Value);
         }
     }
 }
