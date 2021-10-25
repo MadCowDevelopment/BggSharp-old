@@ -12,10 +12,10 @@ namespace BggSharp.Core.Queries
         {
             var client = new RestClient(RootPath);
             client.UseDotNetXmlSerializer();
+
             var request = new RestRequest(query.CreateQueryUrl(), DataFormat.Xml);
 
-            var result = await client.GetAsync<TResult>(request);
-            return result;
+            return await client.GetAsync<TResult>(request);
         }
     }
 }
